@@ -1,0 +1,53 @@
+
+\usepackage[a4paper,left=2.6cm, right=2.3cm,top=2.5cm, bottom=3.0cm]{geometry}
+
+% input-Zeichensatz uft8
+\usepackage[utf8]{inputenc}
+
+% deutscher Zeichensatz
+\usepackage[T1]{fontenc}
+
+% Deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+
+% Erweiterte Funktionen für Formeln / Mathematik
+\usepackage{amsmath,amssymb,amstext}
+
+% für Bilder und Graphiken
+\usepackage{graphicx}
+\graphicspath{Bilder/}
+
+% Zur Darstellung von Webadressen, E-Mails usw.
+% Besonders praktisch ist, dass man innerhalb von \url{} keine Maskierung verwenden muss:
+% Statt '\_' verwendet man einfach '_'.
+% http://ctan.org/pkg/url
+\usepackage{url}
+
+% Verweise 
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+
+\usepackage{csquotes}
+
+% Glossar
+\usepackage[acronym,nonumberlist,automake]{glossaries}
+\makeglossaries
+% % % % Verwendete Abkürzungen
+\loadglsentries{include/glossar.tex}
+
+
+
+% mehrseitige Tabellen
+\usepackage{longtable} 
+
+% Textumflossenen Bilder
+\usepackage{wrapfig}
+
+% Bildunterschriften linksbündig
+\usepackage{caption, booktabs}
+\usepackage{ragged2e} 
+\setkomafont{caption}{\sffamily\fontsize{8}{9.5}\selectfont\RaggedRight} 
+\setkomafont{captionlabel}{\usekomafont{caption}\bfseries} 
+\setcapindent{0pt}
+
+% package für die Seitenzahlen
+\usepackage{scrpage2}

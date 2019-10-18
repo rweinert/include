@@ -1,0 +1,63 @@
+% Vorlage
+% nur die Minipages anpassen
+\documentclass[
+% Dies sind globale Parameter.
+% Sie gelten für die Dokumentenklasse selbst, aber auch für Pakete, welche später geladen werden.
+% ngerman wird auch dem Paket babel genutzt, weshalb bei diesem kein optionaler Parameter verwendet wird.
+% Schriftgröße
+fontsize=12pt,
+% Papierformat
+paper=a4paper,
+% schreibt die Papiergröße korrekt ins Ausgabedokument
+pagesize=auto,
+% nur einseitige Ausgabe
+oneside,
+% Normalerweise wird die erste Zeile eines Absatzes eingerückt, um diesen hervorzuheben.
+% Als Alternative kann man parskip aktivieren, womit statt dem Einrücken ein vertikaler Abstand verwendet wird.
+% Typische Werte sind false, half und full.
+parskip=half,
+% Titelseite erzeugen
+titlepage=on,
+% Sprache des Dokuments
+ngerman
+% Bildunterschriften 
+captions=nooneline
+]{scrartcl} %{article}
+\usepackage[a4paper,left=2.6cm, right=2.3cm,top=2.5cm, bottom=3.0cm]{geometry}
+
+% input-Zeichensatz uft8
+%\usepackage[utf8]{inputenc}
+
+% deutscher Zeichensatz
+\usepackage[T1]{fontenc}
+
+% Deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+
+% Erweiterte Funktionen für Formeln / Mathematik
+\usepackage{amsmath,amssymb,amstext}
+
+% für Bilder und Graphiken
+\usepackage{graphicx}
+
+
+% Zur Darstellung von Webadressen, E-Mails usw.
+% Besonders praktisch ist, dass man innerhalb von \url{} keine Maskierung verwenden muss:
+% Statt '\_' verwendet man einfach '_'.
+% http://ctan.org/pkg/url
+\usepackage{url}
+
+% Textumflossenen Bilder
+\usepackage{wrapfig}
+
+% Bildunterschriften linksbündig
+\usepackage{ragged2e} 
+\setkomafont{caption}{\sffamily\fontsize{8}{9.5}\selectfont\RaggedRight} 
+\setkomafont{captionlabel}{\usekomafont{caption}\bfseries} 
+\setcapindent{0pt}
+
+% package für die Seitenzahlen
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
